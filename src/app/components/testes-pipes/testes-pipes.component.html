@@ -1,0 +1,6 @@
+<p>Data do Evento: {{ dados.dataDoEvento | date:'dd/MM/yyyy'  }} </p>
+<p>Preço: {{ dados.preco | currency: 'BRL':true }}</p>
+<p>Ingressos limitados: {{ dados.ingressosLimitados | percent: '1.2-2' }} já foram vendidos</p>
+<p>Código: {{ '12345678901234567890' | codigoConvite }}</p>
+<p>CPF do participante: {{ '11292658497' | cpfCnpj }}</p>
+<p>CNPJ da empresa do participante: {{ '12345678901234' | cpfCnpj }}</p>
